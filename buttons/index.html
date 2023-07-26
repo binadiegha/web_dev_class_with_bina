@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons</title>
+  <link></link>
+</head>
+<body>
+
+  <h1>This is the buttons page</h1>
+  <a href="../index.html">  < Go back home</a> <!--Links-->
+  <hr/>
+
+  <div>
+
+    <a href="https://youtube.com" >Go to youtube</a>
+
+    <a href="mailto:jonesgabriel@xpletsquare.com">Email me</a>
+
+   <form>
+
+    <label for="fullname">Enter fullname</label>
+    <input id="fullname" name="fullname" placeholder="John doe" />
+
+    <br>
+
+
+    <label for="fullname">Enter your email</label>
+    <input id="email" name="email" placeholder="John doe" />
+
+
+    <br>
+    <br>
+    <!-- HTML 5 came the button tag! -->
+    <button id="submit" type="button" > Submit </button>
+    
+   </form>
+  </div>
+  
+</body>
+</html>
+
+
+
+<script>
+  // get the button element
+  const button = document.getElementById('submit');
+
+  // click event
+  button.addEventListener('click', ()=> {
+    const fullname = document.getElementById('fullname').value;
+    const email = document.getElementById('email').value;
+
+    const statement = "Hello, " + fullname + " your email is: " + email;
+
+    console.log(statement)
+    // window.alert(statement);
+  })
+
+</script>

@@ -1,0 +1,57 @@
+/* id selector */
+#my-id {
+  border-width: 5px;
+  border-color: green;
+  color: green;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  border-radius: 1px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background-color:cadetblue;
+  color: white;
+}
+
+nav *{
+  font-size: 16px ;
+}
+
+
+
+/* original style */
+.make-red {
+  color: red !important;
+  background-color: blue !important;
+}
+
+/* conflicting style */
+.make-yellow {
+  color: blue;
+  background-color: yellow;
+  border-radius: 20px;
+}
+
+.make-green {
+  color: green;
+}
+
+
+
+
+
+
+
+

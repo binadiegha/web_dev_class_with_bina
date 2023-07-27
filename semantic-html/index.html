@@ -4,39 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Semantic HTML 5</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
 
-  <style>
-    nav ul {
-      list-style-type: none;
-      display: flex;
-      gap: 10px;
-      text-decoration: none;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-    }
-  </style>
 </head>
 <body>
 
-  <h1>This is the Semantic HTML page</h1>
+ 
 
   <nav>
+    <div>
+      <img alt="google logo" src="../images/logo.png"/>
+    </div>
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="../index.html">About</a></li>
       <li><a href="#last">Go to last</a></li>
+
       <li> <button>Login</button></li>
-      <li> <button>Register</button></li>
+      <li> <button >Register</button></li>
+      <li> <button class="make-yellow">Test 1</button></li>
+      <li> <button class="make-yellow" id="my-id">Test 2</button></li>
+      <li> <button class="">Test 3</button></li>
     </ul>
   </nav>
   <hr/>
 
+  <h1 class="make-yellow">This is the Semantic HTML page</h1>
 
-  <section style="border: 2px solid red">
 
-    <h1>Play station Section</h1>
+  <section >
+
+    <h1 >Play station Section</h1>
     <img alt="homes" src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/download-23.jpg" width="400" />
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eveniet rem, a dolores suscipit ab tempora vel asperiores nemo nulla nobis.
 
@@ -45,22 +43,21 @@
   </section>
 
   <section>
-    <h2>This shows the figure tag in action</h2>
+    <h2 class="make-yellow make-red make-green">This shows the figure tag in action</h2>
 
     <figure>
       <img alt="a car engine" src="https://studentlesson.com/ezoimgfmt/i0.wp.com/studentlesson.com/wp-content/uploads/2020/07/Car-engine-parts.jpg?resize=465%2C341&is-pending-load=1" width="400"/>
-
       <figcaption>Fig1. - Fully labeled Diagram of a car engine</figcaption>
     </figure>
   </section>
 
-  <article style="border: 2px solid red">
+  <article >
     <h2>Some small article</h2>
     <img alt="homes" src="https://www.vectornator.io/blog/content/images/2022/09/Cover-How-to-draw-a-car.png" width="400" />
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vitae rem saepe fugiat quae nesciunt libero! Modi molestias placeat aliquid recusandae?</p>
   </article>
 
-  <section style="border: 2px solid red" id="last">
+  <section  id="last">
 
     <h1>This is the last section</h1>
     <img alt="homes" src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/download-23.jpg" width="400" />
@@ -69,8 +66,6 @@
     </p>
 
   </section>
-
-
 
   
 <footer>
